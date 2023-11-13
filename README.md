@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode / zwarte piste
 
   #### Je focus:
-  Focussen op surface plane, maar als het lukt ook responsive (kies uit responsive óf surface plane)
+  Focussen op surface plane, maar als het lukt ook responsive 
  
 </details>
 
@@ -42,8 +42,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Ford
   - Daniel Gibbs
   - Rackmindo?
+  - Ocearch
     
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.ocearch.org/science/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
