@@ -47,11 +47,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 https://www.ocearch.org/science/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Ocearch Science 
   <img src="readme-images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+ Ocearch Shop
   <img src="readme-images/screenshot2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
