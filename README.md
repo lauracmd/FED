@@ -48,7 +48,8 @@ https://www.ocearch.org/science/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Ocearch Science 
-  <img src="readme-images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
+  <img src="FED/readme-images
+/FireShot Capture 002 - Science - Ocearch - www.ocearch.org.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
  Ocearch Shop
