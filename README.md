@@ -86,8 +86,8 @@ https://www.ocearch.org/science/
 
 </details>
 
-
-
+Het bedenken hoe ik de haai wilde maken was iets moeilijker, maar met behulp van Sanne bleef ik toch op de goede richting
+<img src="readme-images/witte_haai.png" width="375px" alt="afbeelding van de witte haai op de OCEARCH website">
 
 
 ## Voortgang 1 (week 2)
