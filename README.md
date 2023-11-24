@@ -102,10 +102,10 @@ Het bedenken hoe ik de haai wilde maken was iets moeilijker, maar met behulp van
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Laura      | student 2          | student 3    | student 4        |
+  | Laura      | Lisa          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | de 3 verschillende buttons die allemaal weer hun eigen stijlen hebben  | en dit             | en ik dit    | en dan ik dat    |
-  | de haai met de nummers | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | de 3 verschillende buttons die allemaal weer hun eigen stijlen hebben  | Nav bar            |Margin en padding    | en dan ik dat    |
+  | de haai met de nummers | Foto knop slide | Semantisch correct? | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
