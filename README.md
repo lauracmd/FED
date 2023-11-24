@@ -104,8 +104,8 @@ https://www.ocearch.org/science/
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | de 3 verschillende buttons die allemaal weer hun eigen stijlen hebben  | en dit             | en ik dit    | en dan ik dat    |
+  | de haai met de nummers | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
