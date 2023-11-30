@@ -101,7 +101,7 @@ https://www.ocearch.org/science/
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Laura      | Lisa          | student 3    | student 4        |
+  | Laura      | Lisa          | Sander    | Kayane        |
   | ---            | ---                | ---          | ---              |
   | de 3 verschillende buttons die allemaal weer hun eigen stijlen hebben  | Nav bar            |Margin en padding    | en dan ik dat    |
   | de haai met de nummers | Foto knop slide | Semantisch correct? | dit wil ik zeker |
@@ -135,7 +135,7 @@ https://www.ocearch.org/science/
   | ---            | ---                | ---          | ---              |
   | De achtergrond en afbeelding bij de h1  | en dit             | en ik dit    | en dan ik dat    |
   | iframe stylen | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | FAQ li tekst weergeven met knop maar wel te lezen voor screenreaders            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
