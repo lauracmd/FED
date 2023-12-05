@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* //// */
+/* CUSTOM PROPERTIES */
+/* //// */
+
+:root {
+    --background-color:#02253b;
+    --gradient-begin-color: #01253b;
+    --gradient-end-color: #013F50;
+    --form-background-color: #0E4157;
+
+    --text-color: white;
+    --header-two-color: #4e89aa;
+
+    --li-background-color: #346486;
+    --li-background-color-active: #0B304C;
+
+    --button-border: white;
+    --button-border-active: #02253B;
+    --class-button-background-color-state1: #26B5DA;
+    --class-button-background-color-state2: #02253B;
+    --text-color-button: white;
+
+    --input-background: #386072;
+    --input-button: #02253B;
+    --caret-color: white;
+    --focus-color: #26B5DA;
+}
+
+
+
+/* https://codepen.io/Laura-the-styleful/pen/abXGGLe?editors=0100 menu en navigatie */
+
+body {
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+/* //// */
+/* ALLES QUA HEADERS EN PARAGRAPHS */
+/* //// */
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1, h2, header p {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+
+h1, h3 {
+    font-size: 2em;
+}
+
+h2{
+    color: var(--header-two-color);
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+p {
+    /* font-size: 1.em; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+/* //// */
+/* HEADER */
+/* //// */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1em;
+}
+
+header a:first-of-type {
+    display: flex;
+    align-items: center;
+    width: 10em;
+    margin-right: auto;
+}
+
+header > button {
+    border: none;
+}
+
+header button .bar {
+    width: 1.5em;
+}
+
+header button:first-of-type img{
+    filter: invert(1);
+    padding: .6em;
+}
+
+header > button:nth-of-type(2) .bar:first-of-type {
+    margin-bottom: 1em;
+}
+
+header > button:nth-of-type(2) .bar:last-of-type {
+    margin-top: 1em;
+}
+
+
+/* //// */
+/* NAV IN HEADER */
+/* //// */
+
+header nav {
+    display:block;
+    position: fixed;
+    left: 100%;
+    z-index: 10;
+
+    background-color: yellow;
+
+    font-size: 2.2em;
+
+    padding: 1em;
+
+    /* transition: 1s ease-in-out; */
+}
+
+header nav.inBeeld {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+
+    transition: 1s ease-in-out;
+}
+
+header nav ul {
+    list-style: none;
+    
+}
+
+header nav.inBeeld > ul > li {
+    padding-bottom: .2em;
+}
+
+header nav.inBeeld a {
+    text-decoration: none;
+}
+
+header nav.inBeeld button {
+    position: absolute;
+    left: calc(90% - 1.5em);
+    top: calc(7% - 1.5em);
+
+    border: none;
+}
+
+header nav.inBeeld button .bar {
+    rotate: 45deg;
+}
+
+header nav.inBeeld button .bar:first-of-type {
+    rotate: -45deg;
+}
+
+header nav.inBeeld p {
+    font-size: .5em;
+    color: var(--header-two-color);
+}
+
+
+
+main section {
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+main section:first-of-type {
+    text-align: center;
+}
+
+main section > p {
+    width: 85%;
+    line-height: 2em;
+    padding-bottom: 3em;
+}
+
+
+
+.button {
+    display: block;
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 5em;
+
+    color: var(--text-color-button);
+    border: 1px solid var(--class-button-background-color-state1);
+    
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+
+    padding: .8em 1.2em .8em 1.2em;
+    margin-top: 1em;
+}
+
+.button:hover {
+    background-color: var(--class-button-background-color-state1);
+    transition: .5s;
+
+    scale: 1.1;
+}
+
+.button:focus-visible {
+    border: 4px solid var(--focus-color);
+}
+
+/* //// */
+/* VIDEO OF FOTO'S STYLING */
+/* //// */
+
+button {
+    background-color: transparent;
+    border: 2px solid var(--button-border);
+    border-radius: 50%;
+
+    width: 3em;
+    height: 3em;
+
+    display: inline-block;
+
+    aspect-ratio: 1/1;
+
+    text-align: center;
+    text-decoration: none;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor:pointer;
+}
+
+main button:hover {
+    border: 2px solid var(--button-border-active);
+}
+
+main button:hover .bar {
+    background-color: var(--button-border-active)
+}
+
+.bar {
+    position: absolute;
+    width: 1em;
+    height: .2em;
+
+    background-color: var(--button-border);
+}
+
+main button .bar:first-of-type {
+    rotate: 90deg;
+}
+
+
+
+iframe {
+    width: 100%; 
+    height:56%;
+}
+
+
+/* //// */
+/* FAQ */
+/* //// */
+
+.faq {
+    width: 85%;
+    margin-left: auto;  
+    margin-right: auto;  
+    list-style: none;
+}
+
+.faq li {
+    background-color: var(--li-background-color);
+
+    padding: 2em;
+    margin-bottom: 2em;
+
+    border-radius: 2em;
+
+    display:flex;
+	flex-wrap:wrap;
+	
+	transition:1s;
+	
+	overflow:hidden;
+
+    position: relative;
+}
+
+.faq li.open {
+    background-color:var(--li-background-color-active);
+}
+
+.faq h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: left;
+    padding-right: 3em;
+    padding-left: 0;
+}
+
+.faq li div {
+    max-height:0;
+	width:100%;
+	transition:1s;
+	overflow:hidden;
+}
+
+.faq li.open div {
+    max-height: 110em;
+    color:lightblue;
+}
+
+.faq button {
+    position: absolute;
+    left: calc(90% - 1.5em);
+
+}
+
+/* Expres de kleur niet verandert als li open gaat naar donkerblauw, omdat het anders niet meer te lezen is */
+
+.faq li.open button .bar:first-of-type {
+    opacity: 0;
+    transition: .5s;
+}
+
+
+
+
+/* //// */
+/* LAATSTE SECTION */
+/* //// */
+
+main > section:last-of-type {
+    background-color: var(--form-background-color);
+    padding: 1em;
+
+    text-align: center;
+}
+
+main > section:last-of-type h2 {
+    color: var(--text-color);
+    letter-spacing: normal;
+    font-size: 2em;
+    text-transform:inherit;
+
+}
+
+/* form {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: center;
+} */
+
+main > section:last-of-type form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+main > section:last-of-type input {
+    border-radius: 5em;
+    border: none;
+    background-color: var(--input-background);
+    color: var(--text-color);
+
+    padding: .8em;
+    margin: .5em;
+
+    caret-color: var(--caret-color);
+}
+
+main > section:last-of-type input:first-of-type {
+    width: 30%;
+}
+
+main > section:last-of-type input:nth-of-type(2){
+    width: 60%;
+}
+
+main > section:last-of-type input:nth-of-type(3){
+    width: 95%;
+}
+
+main > section:last-of-type input[type=submit] {
+    display: block;
+    width: 20em;
+    margin: 1em auto 1em auto;
+
+    background-color: var(--input-button);
+
+    cursor:pointer;
+}
+
+main > section:last-of-type input[type=submit]:hover {
+    transition: .3s;
+    scale: 1.1;
+}
+
+
+
+
+:focus-visible {
+    border: 2px solid var(--class-button-background-color-state1);
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+
+
+
+/* //// */
+/* FOOTER */
+/* //// */
+
+footer {
+    background-image: linear-gradient(var(--gradient-begin-color), var(--gradient-end-color) );
+}
+
+footer img {
+    display:block;
+    width: 30%;
+
+    margin: 8em auto 1em auto;
+}
+
+footer p {
+    text-align: center;
+    font-size: .8em;
+
+    padding: 5em;
+}
+
+
+
+/* @media (min-width:38em) {
+
+}
+
+@media (min-width:57em) {
+
+} */
+

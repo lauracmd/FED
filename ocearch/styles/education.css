@@ -1,0 +1,80 @@
+:root {
+    --curriculum-background-color: #042B46;
+    --curriculum-li-background: #05253D;
+}
+
+main > section:nth-of-type(2) {
+    background-color: var(--curriculum-background-color);
+    padding: 1em;
+    
+}
+
+
+
+main section:not(section:last-of-type) form {
+	display:flex;
+	gap:1em;
+}
+
+main section:not(section:last-of-type) form label {
+	background-color:gold;
+	padding:.5em 1em;
+	border-radius:.5em;
+	
+	cursor:pointer;
+}
+
+main section:not(section:last-of-type) form label:has(:focus-visible) {
+	box-shadow:0 0 0 .2em dodgerblue;
+}
+
+main section:not(main > section:last-of-type) form label:has(:checked) {
+	font-weight:bold;
+	background-color:orange;
+}
+
+main section:not(section:last-of-type) form label input {
+	position:absolute;
+	left:-9999em;
+}
+
+
+
+main > section > section {
+	position:absolute;
+	left:-9999em;
+    /* background-color: yellow; */
+}
+
+/* zorgt ervoor dat de titel weg gaat voor visueel, maar voor screenreaders blijft staan */
+main > section > section > h3 {
+    position: absolute;
+    left: -999px;
+}
+
+main > section:nth-of-type(2) li {
+    text-align: left;
+    list-style: none;
+}
+
+main > section > section > section {
+    background-color: var(--curriculum-li-background);
+    border-radius: 1em;
+
+    padding: 1em;
+}
+
+main > section > section > section h4 {
+    letter-spacing: .3em;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+main > section:has( [value="k2"]:checked ) [data-courses="k2"],
+main > section:has( [value="3-5"]:checked ) [data-courses="3-5"],
+main > section:has( [value="6-8"]:checked ) [data-courses="6-8"],
+main > section:has( [value="stem"]:checked ) [data-courses="stem"] {
+	position:static;
+	left:unset;
+}
