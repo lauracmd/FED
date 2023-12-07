@@ -1,20 +1,20 @@
 // EERSTE LI //
 const eersteButton = document.querySelector(".shark li:first-of-type button");
 const deEersteLi = document.querySelector("main section:nth-of-type(3) > ol li:nth-of-type(1)");
-// const deEersteSluitButton = document.querySelector("main section:nth-of-type(3) > ol li:nth-of-type(1) button");
+const deEersteSluitButton = document.querySelector("main section:nth-of-type(3) > ol li:nth-of-type(1) button");
 
 
 eersteButton.onclick = toonEersteLi;
 
-// deEersteSluitButton.onclick = sluitEersteLi;
+deEersteSluitButton.onclick = sluitEersteLi;
 
 function toonEersteLi() {
     deEersteLi.classList.add("inBeeld");
 }
 
-// function sluitEersteLi() {
-//     deEersteLi.classList.remove("inBeeld");
-// }
+function sluitEersteLi() {
+    deEersteLi.classList.remove("inBeeld");
+}
 
 
 
