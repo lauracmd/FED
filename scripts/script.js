@@ -29,8 +29,11 @@ sluitMenuButton.onclick = sluitNavMenu;
 
 function toonNavMenu() {
     navMenu.classList.add("inBeeld");
+
+    document.documentElement.classList.add("inBeeld");
 }
 
 function sluitNavMenu() {
     navMenu.classList.remove("inBeeld");
+    document.documentElement.classList.remove("inBeeld");
 }

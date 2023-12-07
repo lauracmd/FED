@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* //// */
@@ -37,6 +38,11 @@
 
 
 /* https://codepen.io/Laura-the-styleful/pen/abXGGLe?editors=0100 menu en navigatie */
+
+html.inBeeld,
+html.inBeeld body{
+    overflow: hidden;
+}
 
 body {
     width: 100%;
@@ -134,7 +140,7 @@ header > button:nth-of-type(2) .bar:last-of-type {
 header nav {
     display:block;
     position: fixed;
-    left: 100%;
+    inset:0;
     z-index: 10;
 
     background-color: yellow;
@@ -143,17 +149,18 @@ header nav {
 
     padding: 1em;
 
-    /* transition: 1s ease-in-out; */
+    translate: 100% 0;
+
+    transition: 1s ease-in-out;
+
+    overflow: auto;
 }
 
 header nav.inBeeld {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    translate: 0 0;
 
 
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out; */
 }
 
 header nav ul {
@@ -459,7 +466,9 @@ main > section:last-of-type input[type=submit]:hover {
 }
 
 
+/* :focus {
 
+} */
 
 :focus-visible {
     border: 2px solid var(--class-button-background-color-state1);
