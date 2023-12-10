@@ -13,8 +13,16 @@
 
 :root {
     --background-color:#02253b;
+
+    --header-li-background-color: #012033;
+    --header-li-text-color: white;
+
+    --header-search-background-color: #02253B;
+    --header-search-border-color: #346486;
+
     --gradient-begin-color: #01253b;
     --gradient-end-color: #013F50;
+
     --form-background-color: #0E4157;
 
     --text-color: white;
@@ -86,9 +94,30 @@ p {
     margin-right: auto;
 }
 
+form {
+    font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
 
 img {
     width: 100%;
+}
+
+
+input:focus {
+    outline: none !important;
+}
+
+:focus {
+    border: none;
+}
+
+:focus-visible {
+    border: 2px solid var(--class-button-background-color-state1);
+}
+
+::placeholder {
+    color: var(--text-color);
 }
 
 
@@ -104,7 +133,7 @@ header {
     padding: 1em;
 }
 
-header a:first-of-type {
+header > a:first-of-type {
     display: flex;
     align-items: center;
     width: 10em;
@@ -132,6 +161,73 @@ header > button:nth-of-type(2) .bar:last-of-type {
     margin-top: 1em;
 }
 
+/* //// */
+/* FORM IN HEADER */
+/* //// */
+
+
+header form {
+    background-color: var(--header-search-background-color);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    position: absolute;
+    /* inset: 0; */
+    z-index: 10;
+
+    transform: translateY(-20em);
+
+    overflow: auto;
+
+    left: 0;
+    top: 0;
+    right: 0;
+
+    padding: 5em 1em 4em 1em;
+
+    transition: 1s ease-in-out;
+}
+
+header form input[type="search"] {
+    font-size: 2em;
+    font-weight: bold;
+
+    color: var(--text-color);
+    background-color: var(--header-search-background-color);
+
+    position: absolute;
+
+    width: 90%;
+    padding: 1em;
+
+    border: none;
+    border-bottom: .1em solid var(--header-search-border-color);
+    /* padding-bottom: 1em; */
+    
+}
+
+/* cancelt het kruisje om de tekst weg te halen */
+header form input[type = 'search']::-webkit-search-cancel-button{
+    -webkit-appearance: none;	 
+}
+
+header form button {
+    border: none;
+    left: calc(90% - 1.5em);
+}
+
+
+header form.inBeeld {
+    transform: translateY(0);
+
+
+    /* transition: 1s ease-in-out; */
+}
+
+
 
 /* //// */
 /* NAV IN HEADER */
@@ -143,7 +239,8 @@ header nav {
     inset:0;
     z-index: 10;
 
-    background-color: yellow;
+    background-color: var(--header-li-background-color);
+    color: var(--header-li-text-color);
 
     font-size: 2.2em;
 
@@ -165,18 +262,25 @@ header nav.inBeeld {
 
 header nav ul {
     list-style: none;
-    
+
+    padding-bottom: 0.2em;
+    /* font-size: 2.5em; */
 }
 
-header nav.inBeeld > ul > li {
-    padding-bottom: .2em;
+header nav li {
+    padding-bottom: .3em;
 }
 
-header nav.inBeeld a {
+/* header nav ul a {
+    color: var(--header-li-text-color);
+} */
+
+header nav a {
     text-decoration: none;
+    color: var(--header-li-text-color);
 }
 
-header nav.inBeeld button {
+header nav button {
     position: absolute;
     left: calc(90% - 1.5em);
     top: calc(7% - 1.5em);
@@ -184,20 +288,62 @@ header nav.inBeeld button {
     border: none;
 }
 
-header nav.inBeeld button .bar {
+header nav button .bar, header form button .bar {
     rotate: 45deg;
 }
 
-header nav.inBeeld button .bar:first-of-type {
+header nav button .bar:first-of-type, header form button .bar:first-of-type {
     rotate: -45deg;
 }
 
-header nav.inBeeld p {
+header nav p {
     font-size: .5em;
     color: var(--header-two-color);
+
+    margin-top: 1em;
 }
 
 
+/* de lijst onder programs */
+header nav ul li:nth-of-type(2) > ul {
+    max-height:0;
+    width:100%;
+	transition:1s;
+	overflow:hidden; 
+
+    font-size: .5em;
+} 
+
+header nav ul li:nth-of-type(2) > ul.open {
+    max-height: 10em;
+}
+    
+
+/* tweede lijst met socials in nav */
+header nav > ul:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+header nav img {
+    /* Maakt alle foto's eerst zwart en daarna wit */
+    filter: brightness(0) invert(1);
+
+    width: .6em;
+    height: .6em;
+
+    margin-right: .5em;
+}
+
+
+
+
+
+/* //// */
+/* MAIN */
+/* //// */
 
 main section {
     padding-top: 4em;
@@ -218,7 +364,7 @@ main section > p {
 
 main > section:first-of-type {
     /* position: relative; */
-    background-image: url(../images/background-image1.png) ;
+    background-image: url(../images/background-image1.webp) ;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -258,7 +404,7 @@ main > section:first-of-type {
     margin-top: 1em;
 }
 
-.button:hover {
+.button:hover, .button:active {
     background-color: var(--class-button-background-color-state1);
     transition: .5s;
 
@@ -279,7 +425,7 @@ button {
     border-radius: 50%;
 
     width: 3em;
-    height: 3em;
+    /* height: 3em; */
 
     display: inline-block;
 
@@ -296,11 +442,11 @@ button {
     cursor:pointer;
 }
 
-main button:hover {
+main button:hover,  main button:active{
     border: 2px solid var(--button-border-active);
 }
 
-main button:hover .bar {
+main button:hover .bar, main button:active .bar {
     background-color: var(--button-border-active)
 }
 
@@ -321,6 +467,7 @@ main button .bar:first-of-type {
 iframe {
     width: 100%; 
     height: 20em;
+    border: none;
 /* 
     margin-top: 1em; */
 }
@@ -463,19 +610,6 @@ main > section:last-of-type input[type=submit] {
 main > section:last-of-type input[type=submit]:hover {
     transition: .3s;
     scale: 1.1;
-}
-
-
-/* :focus {
-
-} */
-
-:focus-visible {
-    border: 2px solid var(--class-button-background-color-state1);
-}
-
-::placeholder {
-    color: var(--text-color);
 }
 
 
