@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rode / zwarte piste
 
   #### Je focus:
-  Focussen op surface plane, maar als het lukt ook responsive 
+  Focussen op surface plane
  
 </details>
 
@@ -41,7 +41,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - DLO
   - Ford
   - Daniel Gibbs
-  - Rackmindo?
   - Ocearch
     
 https://www.ocearch.org/science/ 
@@ -65,6 +64,15 @@ https://www.ocearch.org/science/
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - geen gebruik gemaakt van headings
+  - veel gebruik gemaakt van divs
+  - geen unieke titels
+  - geen unieke buttons, a's en labels -> geen goede alts gebruikt
+  - geen goede visuele focus stijl
+  - gebruiken niet echt list elementen, vooral div's
+  - sommige normale tekst lijkt op links, maar zijn geen links?
+  - voor buttons soms ook a'tjes gebruikt
+  - skip link heeft geen nut in de situatie dat hij gebruikt is
 
 </details>
 
@@ -141,9 +149,7 @@ https://www.ocearch.org/science/
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - goede feedback en hulp gekregen over de vragen die ik had
 - ...
 
 </details>
@@ -159,7 +165,14 @@ https://www.ocearch.org/science/
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  - ik ben bij sommige images en links de alt tekst vergeten, wat ik nog moet doen
+  - ik heb unieke titels gebruikt en valide code geschreven
+  - focus stijl toegevoegd
+  - tijdens het testen kwam ik erachter dat de header wel iets groter mocht, zoals de buttons
+  - ik heb headings grbuikt op de goede volgorde en geen divs
+  - wat lijsten zijn heb ik ook list elementen voor gebruikt
+  - links die op links lijken en buttons die op buttons lijken
+  - de reduced-motion moet wel nog gedaan worden
 </details>
 
 
@@ -180,16 +193,16 @@ https://www.ocearch.org/science/
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | de achtergrond foto opacity verlagen zonder de tekst  | en dit             | en ik dit    | en dan ik dat    |
+  | de search bar | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - of een divje om de achtergrond te vervagen of de foto in photoshop zelf aanpassen
+  - met translateY kan de search bar van boven komen
   - nog een punt
   - ...
 
