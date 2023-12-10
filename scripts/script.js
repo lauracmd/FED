@@ -10,12 +10,12 @@ sluitSearchButton.onclick = sluitSearchMenu;
 
 function toonSearchMenu() {
     searchMenu.classList.add("inBeeld");
-    document.documentElement.classList.add("inBeeld");
+    // document.documentElement.classList.add("inBeeld");
 }
 
 function sluitSearchMenu() {
     searchMenu.classList.remove("inBeeld");
-    document.documentElement.classList.remove("inBeeld");
+    // document.documentElement.classList.remove("inBeeld");
 }
 
 

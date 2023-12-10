@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* //// */
@@ -42,6 +43,16 @@
     --caret-color: white;
     --focus-color: #26B5DA;
 }
+
+
+/* :root[data-color-mode="dark-mode"] {
+} */
+
+
+
+
+
+
 
 
 
@@ -468,17 +479,26 @@ iframe {
     width: 100%; 
     height: 20em;
     border: none;
+
+    object-fit:cover;
 /* 
     margin-top: 1em; */
 }
 
+iframe:hover{
+    scale:1.1;
+}
+
+/* iframe:hover {
+
+} */
 
 /* //// */
 /* FAQ */
 /* //// */
 
 .faq {
-    width: 85%;
+    width: 95%;
     margin-left: auto;  
     margin-right: auto;  
     list-style: none;
@@ -639,11 +659,13 @@ footer p {
 
 
 
-/* @media (min-width:38em) {
-
+@media (min-width:400px) {
+    .faq {
+        width: 85%;
+    }
 }
 
-@media (min-width:57em) {
+/* @media (min-width:57em) {
 
-} */
+}  */
 
