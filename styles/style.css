@@ -5,7 +5,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* //// */
@@ -58,6 +58,10 @@
 
 /* https://codepen.io/Laura-the-styleful/pen/abXGGLe?editors=0100 menu en navigatie */
 
+html {
+    width: 100%;
+}
+
 html.inBeeld,
 html.inBeeld body{
     overflow: hidden;
@@ -107,6 +111,10 @@ p {
 
 form {
     font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+button, a {
+    cursor:pointer;
 }
 
 
@@ -338,9 +346,14 @@ header nav > ul:nth-of-type(2) {
     align-items: center;
 }
 
-header nav img {
+header nav > ul:nth-of-type(2) li {
+    display: inline-block;
+}
+
+header nav > ul:nth-of-type(2) img {
     /* Maakt alle foto's eerst zwart en daarna wit */
     filter: brightness(0) invert(1);
+    
 
     width: .6em;
     height: .6em;
@@ -450,7 +463,7 @@ button {
     justify-content: center;
     align-items: center;
 
-    cursor:pointer;
+    /* cursor:pointer; */
 }
 
 main button:hover,  main button:active{
