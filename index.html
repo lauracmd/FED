@@ -114,6 +114,15 @@
             </ul>
 
             <p>Filters</p>
+            <fieldset>
+                <legend>Color mode</legend>
+                <input type="radio" id="system-mode" name="color-mode" value="system-mode" checked>
+                <label for="system-mode">System</label>
+                <input type="radio" id="light-mode" name="color-mode" value="light-mode">
+                <label for="light-mode">Licht</label>
+                <input type="radio" id="dark-mode" name="color-mode" value="dark-mode">
+                <label for="dark-mode">Donker</label>
+              </fieldset>
 
             <!-- sluit button -->
             <button>
@@ -132,7 +141,6 @@
             <p>OCEARCH Chief Scientist</p>
         </section>
         
-
 
         <iframe src="https://www.youtube.com/embed/vCpWAsUotoA?si=vuYM30PnzPlTZQvq" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -320,8 +328,6 @@
             </ol>
         </section>
 
-        <!-- Meerdere foto's, knop zelfde layout als bij de video bovenin -->
-
         <section>
             <h2>List of statistics from OCEARCH</h2>
             <ul>
@@ -344,7 +350,26 @@
             </ul>
         </section>
 
-        <img src="./images/scienceslider_01.jpeg" alt="">
+        <section>
+            <!-- de container / slider  -->
+            <ul> 
+                <!-- de individuele slide -->
+                <li>
+                    <img src="./images/Science_slider/scienceslider_01.jpeg" alt="image of...">
+                </li>
+                <li>
+                    <img src="./images/Science_slider/scienceslider_02.jpeg" alt="image of...">
+                </li>
+                <li>
+                    <img src="./images/Science_slider/scienceslider_03.jpeg" alt="image of...">
+                </li>
+                <li>
+                    <img src="./images/Science_slider/scienceslider_04.jpeg" alt="image of...">
+                </li>
+            </ul>
+            <button>&#10095;</button> 
+            <button>&#10094;</button> 
+        </section>
 
         <section>
             <h2>Faq</h2>
@@ -399,13 +424,13 @@
             <p>Get the latest tracker updates, events and giveaways sent directly to your inbox.</p>
             <form>
                 <label for="fname"></label>
-                <input type="text" id="fname" name="firstname" placeholder="First Name">
+                <input type="text" id="fname" name="firstname" autocomplete="given-name" placeholder="First Name">
 
                 <label for="lname"></label>
-                <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                <input type="text" id="lname" name="lastname" autocomplete="family-name" placeholder="Last Name">
 
                 <label for="email"></label>
-                <input type="text" id="email" name="emailadress" placeholder="Email">
+                <input type="text" id="email" name="emailadress" autocomplete="email" placeholder="Email">
 
                 <input type="submit" value="Subscribe">
             </form>
@@ -421,4 +446,5 @@
     <script src="./scripts/script.js"></script>
     <script src="./scripts/faq.js"></script>
     <script src="./scripts/shark.js"></script>
+    <script src="./scripts/slideshow.js"></script>
 </body>
