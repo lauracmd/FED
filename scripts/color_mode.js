@@ -96,5 +96,5 @@ function updateColorModeOnRoot() {
   }
 
 function changeBackgroundImage() {
-  document.querySelector('main > section:first-of-type').style.backgroundImage="urlurl(../images/background-image1_light.webp)";
+  document.querySelector('main > section:first-of-type').style.backgroundImage="url(../images/background-image1_light.webp)";
 }

@@ -12,8 +12,6 @@
     --background-color-shark: white;
     --shark-popup-button-color: black;
 
-    --li-background-color: #346486;
-    --li-background-color-active: #0B304C;
     --keyframes-box-shadow: rgba(0, 247, 255, 0);
 
     --slideshow-button-background: #0b304ccf;
@@ -21,22 +19,18 @@
     --slideshow-button-background-hover: #062237cf;
 }
 
-/* :root[data-color-mode="light-mode"] { 
+:root[data-color-mode="light-mode"] { 
     --button-color: #26B5DA;
 
     --text-color-inBeeld: black;
-    --text-color-border: white;
-    --background-color-shark: white;
-    --shark-popup-button-color: black;
+    --text-color-border: #012033;
 
-    --li-background-color: #346486;
-    --li-background-color-active: #0B304C;
     --keyframes-box-shadow: rgba(0, 247, 255, 0);
 
     --slideshow-button-background: #0b304ccf;
     --slideshow-button-text: white;
     --slideshow-button-background-hover: #062237cf;
-} */
+}
 
 
 
@@ -280,7 +274,7 @@ main section:nth-of-type(3) > ol li.inBeeld {
 
 }
 
-main section:nth-of-type(3) > ol li.inBeeld h3, main section:nth-of-type(2) > ol li.inBeeld p {
+main section:nth-of-type(3) > ol li.inBeeld h3, main section:nth-of-type(3) > ol li.inBeeld p {
     width: 90%;
 }
 

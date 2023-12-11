@@ -1,4 +1,6 @@
 :root {
+    --background-image: url("../images/background-image2.webp");
+
     --curriculum-form-background: #4E89AA;
     --curriculum-form-checked: #286a90;
 
@@ -10,6 +12,8 @@
 
 
 :root[data-color-mode="light-mode"] {
+    --background-image: url("../images/background-image2_light.webp");
+
     --curriculum-form-background: #4E89AA;
     --curriculum-form-checked: #286a90;
 
@@ -26,7 +30,7 @@
 
 
 main > section:first-of-type {
-    background-image: url(../images/background-image2.webp);
+    background-image: var(--background-image);
 }
 
 

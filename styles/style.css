@@ -14,6 +14,7 @@
 
 :root {
     --background-color:#02253b;
+    --background-image: url("../images/background-image1.webp");
 
     --header-li-background-color: #012033;
     --header-li-text-color: white;
@@ -33,6 +34,7 @@
 
     --li-background-color: #346486;
     --li-background-color-active: #0B304C;
+    --li-color-border: none;
 
     --button-border: white;
     --button-border-active: #02253B;
@@ -46,39 +48,40 @@
     --focus-color: #26B5DA;
 }
 
-/* @media (prefers-color-scheme: light) {
-    
-    
-    main > section:first-of-type {
-        height: 4000em;
-        background-image: url(../images/background-image1_light.webp) ;
+/* @media [data-color-mode="light-mode"] {  
+    header img {
+        height: 4000em; 
+        filter: brightness(.8) contrast(1.2);
     }
 } */
 
 
 :root[data-color-mode="light-mode"] {
-    --background-color:#9eadb6;
+    --background-color:#9db8c8;
+    --background-image: url("../images/background-image1_light.webp");
 
-    --header-li-background-color: #012033;
+    --header-li-background-color: #9db8c8;
     --header-li-text-color: #02253b;
 
-    --header-search-background-color: #02253B;
+    --header-search-background-color: #9db8c8;
     --header-search-border-color: #346486;
 
     --header-line-under-a-color: #02253b;
 
-    --gradient-begin-color: #9eadb6;
-    --gradient-end-color: #c4ced4;
+    --gradient-begin-color: #9db8c8;
+    --gradient-end-color: rgb(218, 229, 236);
 
     --form-background-color: #0E4157;
 
     --text-color: #02253b;
-    --header-two-color: #4e89aa;
+    --header-two-color: #073049;
 
-    --li-background-color: #346486;
-    --li-background-color-active: #0B304C;
+    --li-background-color: #b9cdd8;
+    --li-background-color-active: #c6e0ed;
+    --li-color-text: #012033;
+    /* --li-color-border: #02253B; */
 
-    --button-border: white;
+    --button-border: #012033;
     --button-border-active: #02253B;
     --class-button-background-color-state1: #26B5DA;
     --class-button-background-color-state2: #02253B;
@@ -90,6 +93,11 @@
     --focus-color: #26B5DA;
 }
 
+@media (prefers-color-scheme: light){
+    main > section:first-of-type {
+        background-image: none;
+    }
+}
 
 
 
@@ -441,7 +449,7 @@ header nav > ul:nth-of-type(2) img {
 
 
 /* INPUTS */
-header fieldset {
+header nav fieldset {
     margin:0;
     padding:0;
     
@@ -454,8 +462,8 @@ header fieldset {
     background-color: yellowgreen;
   }
   
-  header legend,
-  header input {
+  header nav legend,
+  header nav input {
     /* radio buttons en legend zijn er wel, */
     /* maar links ver buiten beeld :-) */
     position:absolute;
@@ -466,7 +474,7 @@ header fieldset {
   }
   
   /* LABEL */
-  header label {
+  header nav label {
     /* het label is de knop die je ziet */
     /* en waar je op kunt klikken */
     /* met 'for' zijn ze gekoppeld aan de radio buttons */
@@ -524,7 +532,7 @@ main section > p {
 }
 
 main > section:first-of-type {
-    background-image: url(../images/background-image1.webp);
+    background-image: var(--background-image);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -650,6 +658,7 @@ iframe {
     margin-bottom: 2em;
 
     border-radius: 2em;
+    border: 1px solid var(--li-color-border);
 
     display:flex;
 	flex-wrap:wrap;
@@ -682,7 +691,7 @@ iframe {
 
 .faq li.open div {
     max-height: 110em;
-    color:lightblue;
+    color:var(--li-color-text);
 }
 
 .faq button {
