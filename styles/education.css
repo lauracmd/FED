@@ -8,6 +8,23 @@
     --curriculum-a-hover-color: #4E89AA;
 }
 
+
+:root[data-color-mode="light-mode"] {
+    --curriculum-form-background: #4E89AA;
+    --curriculum-form-checked: #286a90;
+
+    --curriculum-background-color: #042B46;
+    --curriculum-li-background: #05253D;
+    --curriculum-header-four: #4E89AA;
+    --curriculum-a-hover-color: #4E89AA; 
+}
+
+
+
+
+
+
+
 main > section:first-of-type {
     background-image: url(../images/background-image2.webp);
 }

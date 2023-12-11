@@ -21,6 +21,26 @@
     --slideshow-button-background-hover: #062237cf;
 }
 
+/* :root[data-color-mode="light-mode"] { 
+    --button-color: #26B5DA;
+
+    --text-color-inBeeld: black;
+    --text-color-border: white;
+    --background-color-shark: white;
+    --shark-popup-button-color: black;
+
+    --li-background-color: #346486;
+    --li-background-color-active: #0B304C;
+    --keyframes-box-shadow: rgba(0, 247, 255, 0);
+
+    --slideshow-button-background: #0b304ccf;
+    --slideshow-button-text: white;
+    --slideshow-button-background-hover: #062237cf;
+} */
+
+
+
+
 /* //// */
 /* TEXT SPECIFICATIES ALGEMEEN VOOR DE SCIENCE PAGINA */
 /* //// */
@@ -36,7 +56,7 @@ main section:first-of-type p:nth-of-type(2) {
 
 
 /* //// */
-/* SECTION 1  */
+/* SECTION 2  */
 /* //// */
 
 main section:nth-of-type(2) a:first-of-type{
@@ -50,7 +70,7 @@ main section:nth-of-type(2) a:first-of-type{
 
 
 /* //// */
-/* SECTION 2 MET DE HAAI  */
+/* SECTION 3 MET DE HAAI  */
 /* //// */
 
 /* div met de haai, waarin de li'tjes zich bevinden */
