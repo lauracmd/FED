@@ -24,6 +24,8 @@
 
     --header-line-under-a-color: white;
 
+    --iconFilter: brightness(0) invert(1);
+
     --gradient-begin-color: #01253b;
     --gradient-end-color: #013F50;
 
@@ -48,12 +50,13 @@
     --focus-color: #26B5DA;
 }
 
-/* @media [data-color-mode="light-mode"] {  
-    header img {
-        height: 4000em; 
-        filter: brightness(.8) contrast(1.2);
-    }
-} */
+:root[data-color-mode="christmas-mode"] { 
+    --class-button-background-color-state1: #930000;
+    --class-button-background-color-state2: #630101;
+    --text-color-button: white;
+
+    --focus-color: #930000;
+}
 
 
 :root[data-color-mode="light-mode"] {
@@ -67,6 +70,8 @@
     --header-search-border-color: #346486;
 
     --header-line-under-a-color: #02253b;
+
+    --iconFilter: brightness(0);
 
     --gradient-begin-color: #9db8c8;
     --gradient-end-color: rgb(218, 229, 236);
@@ -93,11 +98,6 @@
     --focus-color: #26B5DA;
 }
 
-@media (prefers-color-scheme: light){
-    main > section:first-of-type {
-        background-image: none;
-    }
-}
 
 
 
@@ -179,9 +179,9 @@ input:focus {
     outline: none !important;
 }
 
-:focus {
+/* :focus {
     border: none;
-}
+} */
 
 :focus-visible {
     border: 2px solid var(--class-button-background-color-state1);
@@ -220,7 +220,7 @@ header button .bar {
 }
 
 header button:first-of-type img{
-    filter: invert(1);
+    filter: var(--iconFilter);
     padding: .6em;
 }
 
@@ -326,8 +326,6 @@ header nav {
 
 header nav.inBeeld {
     translate: 0 0;
-
-
     /* transition: 1s ease-in-out; */
 }
 
@@ -435,7 +433,7 @@ header nav > ul:nth-of-type(2) {
 
 header nav > ul:nth-of-type(2) img {
     /* Maakt alle foto's eerst zwart en daarna wit */
-    filter: brightness(0) invert(1);
+    filter: var(--iconFilter);
     
 
     width: .6em;

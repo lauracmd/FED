@@ -1,0 +1,59 @@
+/* code van https://elementor.com/blog/christmas-snow-effect/ */
+
+#snow-bg {
+    display: none;
+    position: relative;
+}
+ 
+header nav.inBeeld #snow-bg.inBeeld {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url('https://library.elementor.com/resources/christmas-snow-effect/s1.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s2.png'), url('https://library.elementor.com/resources/christmas-snow-effect/s3.png');
+    animation: snow 10s linear infinite;
+}
+ 
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+
+
+#penguin {
+    display: none;
+}
+
+#penguin.inBeeld {
+    display: block;
+    width: 25px;
+    height: 45px;
+    bottom: 0;
+    /* bottom: 50%; */
+    position: absolute;
+    animation: walk 25s linear infinite;
+}
+  
+  @keyframes walk {
+    0%, 100% { 
+      left: 0;    
+      transform: translatex(-50%) scalex(-1); 
+    }
+     49% { 
+      left: 100%; 
+      transform: translatex(-50%) scalex(-1); 
+    }
+      50% { 
+       left: 100%; 
+       transform: translatex(-50%) scalex(1);  
+    }
+       99% { 
+        left: 0;   
+        transform: translatex(-50%) scalex(1);      }
+  }
