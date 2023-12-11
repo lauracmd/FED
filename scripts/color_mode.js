@@ -54,6 +54,18 @@ function radioChecked() {
   
   // :root updaten
   updateColorModeOnRoot();
+
+  // Update snowflakes based on the selected color mode
+  var snowFlakes = document.querySelector("header nav #snow-bg");
+  var penguin = document.querySelector("#penguin");
+
+  // Geholpen door ChatGPT met dit gedeelte, omdat ik er niet achter kwam waar ik de functie zou moeten callen
+  if (colorMode === "christmas-mode") {
+    snowFlakes.classList.add("inBeeld");
+    penguin.classList.add("inBeeld");
+  } else {
+    penguin.classList.remove("inBeeld");
+  }
 }
 
 
@@ -74,27 +86,30 @@ window.matchMedia("(prefers-color-scheme: light)").addEventListener('change', (e
 /****************************************/
 /* data-color-mode van de :root updaten */
 /****************************************/
+
+var snowFlakes = document.querySelector("header nav #snow-bg");
+
 function updateColorModeOnRoot() {
     // als licht of dark gekozen is
-    if (colorMode == "light-mode" || colorMode == "dark-mode" || colorMode == "contrast-mode") {
+    if (colorMode == "light-mode" || colorMode == "dark-mode" || colorMode == "christmas-mode") {
       document.documentElement.dataset.colorMode = colorMode;
     }
     // als system is gekozen
     // bepalen welke system optie relevant is
     else {
       // als light mode is gekozen
-      if (systemLightMode) {
+      if (colorMode == "christmas-mode") {
+        document.documentElement.dataset.colorMode = "christmas-mode";
+        console.log("heyyyyyy!");
+      }
+      else if (systemLightMode) {
         document.documentElement.dataset.colorMode = "light-mode";
-
-        changeBackgroundImage()
       }
       // anders blijft dark mode over
       else {
         document.documentElement.dataset.colorMode = "dark-mode";
       }
     }
-  }
-
-function changeBackgroundImage() {
-  document.querySelector('main > section:first-of-type').style.backgroundImage="url(../images/background-image1_light.webp)";
 }
+
+
