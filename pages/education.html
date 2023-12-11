@@ -3,7 +3,7 @@
 
 <head>
     <title>Education - Ocearch</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/education.css">
 
@@ -44,7 +44,8 @@
                 <li>
                     <a href="#">About</a>
                 </li>
-                <li>Programs
+                <li>
+                    <a href="#">Programs</a>
                     <ul>
                         <li>
                             <a href="../index.html">Science</a>
@@ -78,40 +79,53 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src="#" alt="Twitter">
+                        <img src="../images/twitter_icon_blue.png" alt="Twitter">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="FaceBook">
+                        <img src="../images/facebook_logo_ready.webp" alt="FaceBook">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="LinkedIn">
+                        <img src="../images/linkedin_logo_ready.png" alt="LinkedIn">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="YouTube">
+                        <img src="../images/youtube_logo_ready.webp" alt="YouTube">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="Instagram">
+                        <img src="../images/instagram_logo_ready.png" alt="Instagram">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="Our phone number">
+                        <img src="../images/phone_icon.webp" alt="Our phone number">
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" alt="Our e-mail adres">
+                        <img src="../images/mail_icon.webp" alt="Our e-mail adres">
                     </a>
                 </li>
             </ul>
+
+            <p>Filters</p>
+            <fieldset>
+                <legend>Color mode</legend>
+                <input type="radio" id="system-mode" name="color-mode" value="system-mode" checked>
+                <label for="system-mode">System</label>
+                <input type="radio" id="light-mode" name="color-mode" value="light-mode">
+                <label for="light-mode">Licht</label>
+                <input type="radio" id="dark-mode" name="color-mode" value="dark-mode">
+                <label for="dark-mode">Donker</label>
+              </fieldset>
+
+            <!-- sluit button -->
             <button>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -384,4 +398,5 @@
 
     <script src="../scripts/script.js"></script>
     <script src="../scripts/faq.js"></script>
+    <script src="../scripts/color_mode.js"></script>
 </body>
