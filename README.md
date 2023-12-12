@@ -214,7 +214,7 @@ https://www.ocearch.org/science/
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
@@ -222,7 +222,7 @@ https://www.ocearch.org/science/
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik vond het leren van de custom properties enorm handig, en er zijn nog zo veel mogelijkheden die nog onbekend voor mij zijn. De verschillende modes maken, inclusief een custom theme, was ook iets wat ik wilde leren en wat goed ging na wat trial en error.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
