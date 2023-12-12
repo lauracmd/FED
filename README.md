@@ -224,7 +224,7 @@ https://www.ocearch.org/science/
   ### Dit ging goed/Heb ik geleerd: 
   Ik vond het leren van de custom properties enorm handig, en er zijn nog zo veel mogelijkheden die nog onbekend voor mij zijn. De verschillende modes maken, inclusief een custom theme, was ook iets wat ik wilde leren en wat goed ging na wat trial en error.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/scherm_menu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
