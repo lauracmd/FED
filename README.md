@@ -218,7 +218,20 @@ https://www.ocearch.org/science/
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/foto1-donker.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/foto2-donker.png" width="375px" alt="uitomst opdracht 1">
+
+  <img src="readme-images/foto3-donker.png" width="375px" alt="uitomst opdracht 1">
+
+
+  <img src="readme-images/foto1-licht.png" width="375px" alt="uitomst opdracht 1">
+  
+  <img src="readme-images/foto2-licht.png" width="375px" alt="uitomst opdracht 1">
+  
+  <img src="readme-images/foto3-licht.png" width="375px" alt="uitomst opdracht 1">
+  
+  <img src="readme-images/foto4-licht.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
