@@ -245,7 +245,6 @@ Bij de lichte modus was ik vooral bezig met alles te laten werken en heb ik geen
   ### Dit was lastig/Is niet gelukt:
   Ik wilde ook nog een groter contrast uitwerken, maar ik had er niet heel veel tijd meer voor en wilde het niet gaan afraffelen, waardoor ik ervoor had gekozen om maar een christmas theme te maken, waar niet heel veel onderzoek voor nodig was, behalve het laten werken met JavaScript.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 
   ### Dit kon ik nog verbeteren als ik meer tijd had:
   Als ik meer tijd had gehad zou ik bijvoorbeeld bij de haai de informatie van de popup in de eerste li's zetten ipv een apart lijst van maken die je daarna weer oproep.
