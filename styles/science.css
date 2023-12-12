@@ -19,9 +19,9 @@
     --slideshow-button-background-hover: #062237cf;
 }
 
-:root[data-color-mode="christmas-mode"] {
+/* :root[data-color-mode="christmas-mode"] {
     --button-color: #930000;
-}
+} */
 
 :root[data-color-mode="light-mode"] { 
     --button-color: #26B5DA;

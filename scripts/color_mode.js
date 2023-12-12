@@ -54,17 +54,22 @@ function radioChecked() {
   
   // :root updaten
   updateColorModeOnRoot();
+  applyChristmasStylesToButtons();
 
   // Update snowflakes based on the selected color mode
   var snowFlakes = document.querySelector("header nav #snow-bg");
-  var penguin = document.querySelector("#penguin");
+  // var penguin = document.querySelector("#penguin");
+
+  
 
   // Geholpen door ChatGPT met dit gedeelte, omdat ik er niet achter kwam waar ik de functie zou moeten callen
   if (colorMode === "christmas-mode") {
     snowFlakes.classList.add("inBeeld");
-    penguin.classList.add("inBeeld");
+    applyChristmasStylesToButtons();
+    updateSharkImage();
   } else {
-    penguin.classList.remove("inBeeld");
+    snowFlakes.classList.remove("inBeeld");
+    updateSharkImage(); // zodat de afbeelding ook bij andere color modes terug verandert
   }
 }
 
@@ -112,4 +117,48 @@ function updateColorModeOnRoot() {
     }
 }
 
+
+function updateSharkImage() {
+  var sharkImage = document.querySelector('.shark > img');
+  if (!sharkImage) {
+    console.error("Error: Shark image element not found.");
+    return;
+  }
+
+  var colorMode = document.documentElement.dataset.colorMode;
+
+  if (colorMode === "christmas-mode") {
+    sharkImage.src = "./images/whiteshark_christmas.webp";
+  } else {
+    sharkImage.src = "./images/whiteshark.svg";
+  }
+
+  console.log("Updated shark image:", sharkImage.src);
+}
+
+
+// function applyChristmasStylesToButtons() {
+//   const buttons = document.querySelectorAll('main a.button');
+
+//   // loopt door elke button om de styling toe te voegen
+//   buttons.forEach(button => {
+//       button.classList.add('christmas-button');
+//   });
+
+
+function applyChristmasStylesToButtons() {
+  const buttons = document.querySelectorAll('main a.button');
+
+  // verwijder christmas-mode van buttons
+  buttons.forEach(button => {
+      button.classList.remove('christmas-button');
+  });
+
+  // alleen als de mode christmas-mode is, voeg de classlist toe
+  if (colorMode === "christmas-mode") {
+      buttons.forEach(button => {
+          button.classList.add('christmas-button');
+      });
+  }
+}
 

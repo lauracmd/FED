@@ -26,6 +26,8 @@
 
     --iconFilter: brightness(0) invert(1);
 
+    --header-label-hover: #4e89aa;
+
     --gradient-begin-color: #01253b;
     --gradient-end-color: #013F50;
 
@@ -73,10 +75,12 @@
 
     --iconFilter: brightness(0);
 
+    --header-label-hover: #b9cdd8;
+
     --gradient-begin-color: #9db8c8;
     --gradient-end-color: rgb(218, 229, 236);
 
-    --form-background-color: #0E4157;
+    --form-background-color: #b9cdd8;
 
     --text-color: #02253b;
     --header-two-color: #073049;
@@ -92,8 +96,8 @@
     --class-button-background-color-state2: #02253B;
     --text-color-button: #02253b;
 
-    --input-background: #386072;
-    --input-button: #02253B;
+    --input-background: #c6e0ed;
+    --input-button: #9db8c8;
     --caret-color: #02253b;
     --focus-color: #26B5DA;
 }
@@ -456,8 +460,11 @@ header nav fieldset {
     gap:.5em;
     
     border:none;
+    padding-top: 1em;
 
-    background-color: yellowgreen;
+    overflow-x: visible;
+
+    /* background-color: yellowgreen; */
   }
   
   header nav legend,
@@ -472,12 +479,12 @@ header nav fieldset {
   }
   
   /* LABEL */
-  header nav label {
+header nav label {
     /* het label is de knop die je ziet */
     /* en waar je op kunt klikken */
     /* met 'for' zijn ze gekoppeld aan de radio buttons */
-    width:5em;
-    height:5em;
+    /* width:2em; */
+    height:2em;
     padding:.5em;
     
     display:grid;
@@ -490,7 +497,20 @@ header nav fieldset {
     border-radius:.75rem;
     
     line-height:1em;
-  }
+    font-size: .8em;
+
+    border: .1em solid var(--button-border);
+
+    transition: .5s;
+
+    /* background-color: purple; */
+}
+
+header nav label:hover, header nav label:active {
+    scale: 1.1;
+
+    background-color: var(--header-label-hover);
+}
 
 
 
