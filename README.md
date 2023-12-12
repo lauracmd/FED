@@ -246,8 +246,8 @@ https://www.ocearch.org/science/
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. https://codepen.io/rampen/pen/NbEeyG de sneeuw bij christmas mode
+  2. ChatGpT een klein beetje hulp voor het linken van de christmas mode met de radio button en waar
   3. ...
 
 </details>
