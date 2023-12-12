@@ -218,12 +218,14 @@ https://www.ocearch.org/science/
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
+  De donkere modus is de 'algemene' modus, waarvan ik een light mode heb gemaakt. Op de donkere modus heb ik ook nog een 'christmas-mode' gemaakt als custom theme. Bij deze custom theme heb ik sneeuwvlokjes in het menu toegepast, de haai een kerstmuts gegeven en sneeuw op de a.buttons gelegd die directe kinderen van de sections waren.
   <img src="readme-images/foto1-donker.png" width="375px" alt="uitomst opdracht 1">
 
   <img src="readme-images/foto2-donker.png" width="375px" alt="uitomst opdracht 1">
 
   <img src="readme-images/foto3-donker.png" width="375px" alt="uitomst opdracht 1">
 
+Bij de lichte modus was ik vooral bezig met alles te laten werken en heb ik geen echt 'mooi' kleurenpallet voor gemaakt. Daarom lijkt het een beetje dof vergeleken met dark mode. Met meer tijd had ik dit zeker beter gedaan.
 
   <img src="readme-images/foto1-licht.png" width="375px" alt="uitomst opdracht 1">
   
